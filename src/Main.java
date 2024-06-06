@@ -80,11 +80,11 @@ public class Main {
 
             String responseBody = response.body();
 
-            // Buscar el índice de la tasa de conversión en la cadena de respuesta
+          
             String searchString = "\"conversion_rate\":";
             int startIndex = responseBody.indexOf(searchString) + searchString.length();
 
-            // Buscar el siguiente carácter no numérico después de startIndex
+           
             int endIndex = startIndex;
             while (endIndex < responseBody.length() &&
                     (Character.isDigit(responseBody.charAt(endIndex)) ||
@@ -92,7 +92,7 @@ public class Main {
                 endIndex++;
             }
 
-            // Extraer la tasa de conversión como una subcadena y convertirla a double
+            
             String tasaCambioStr = responseBody.substring(startIndex, endIndex).trim();
             double tasaCambio = Double.parseDouble(tasaCambioStr);
 
