@@ -8,7 +8,6 @@ public class Main {
     public static void main(String[] args) {
         try {
             Scanner sc = new Scanner(System.in);
-
             int opcion;
             double cantidad;
 
@@ -28,6 +27,7 @@ public class Main {
                 System.out.print("Elija una opción válida: ");
                 opcion = sc.nextInt();
 
+                
                 if (opcion >= 1 && opcion <= 6) {
                     System.out.print("Ingrese la cantidad a convertir: ");
                     cantidad = sc.nextDouble();
@@ -61,8 +61,10 @@ public class Main {
                         System.out.println("Opción no válida, por favor intente nuevamente.");
                 }
             } while (opcion != 7);
+            sc.close();
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
+            
         }
     }
 
