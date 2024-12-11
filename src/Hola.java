@@ -8,5 +8,6 @@ public class Hola {
         String resultado = num1 > num2 ? "El " + num1+ " es mayor que " + num2 : "El " + num2+ " es mayor que " + num1 ;
 
         //Probando commi y eddit commit con amend
+        //El jorge Luis me la pela
     }
 }
